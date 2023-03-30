@@ -20,9 +20,21 @@
    </div>
   
    <div class="field">
+    <th>所属(病院名)</th>
+    <td class="sign-up-small-cell"></td>
+    <td><%= f.text_field :affiliation, autofocus: true, autocomplete: "affiliation"%></td>
+   </div>
+  
+   <div class="field">
     <th>メールアドレス</th>
     <td class="sign-up-small-cell"></td>
     <td><%= f.email_field :email, autofocus: true, autocomplete: "email"%></td>
+   </div>
+   
+   <div class="field">
+    <th>会員番号</th>
+    <td class="sign-up-small-cell"></td>
+    <td><%= f.text_field :namber, autofocus: true, autocomplete: "namber"%></td>
    </div>
   
    <div class="field">
