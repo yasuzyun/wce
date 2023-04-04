@@ -1,21 +1,14 @@
  <div class="genrekara" style="font-size :20px;" >
-      ジャンルから探す
+      項目
     </div>
 
     <table class="table table-bordered table-hover text-center ec-genre-list" >
-      <tr>
-        <td>
-          <%= link_to "全商品を表示", items_path, class:"ec-genre-list-item" %>
-        </td>
-      </tr>
-
-      <% genres.each do |genre| %>
-      <% if genre.is_genres_status == true %>
+     
         <tr>
           <td>
-            <%= link_to genre.name, customers_genre_path(genre.id), class:"ec-genre-list-item"%>
+            <li class="nav-item"><%= link_to "新規登録", new_customer_registration_path, class: 'btn btn-outline-secondary mx-3 my-1'  %></li>
+            <li class="nav-item"><%= link_to "会員ログイン", new_customer_session_path, class: 'btn btn-outline-secondary mx-3 my-1'  %></li>
+            <li class="nav-item"><%= link_to "管理者用", new_admin_session_path, class: 'btn btn-outline-secondary mx-3 my-1'  %></li>
             </td>
         </tr>
-           <% end %>
-           <% end %>
     </table>
