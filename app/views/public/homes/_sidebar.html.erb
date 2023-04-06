@@ -2,13 +2,15 @@
       項目
     </div>
 
-    <table class="table table-bordered table-hover text-center ec-genre-list" >
+    <table class="table table-bordered table-hover text- ec-genre-list" >
      
         <tr>
           <td>
-            <li class="nav-item"><%= link_to "新規登録", new_customer_registration_path, class: 'btn btn-outline-secondary mx-3 my-1'  %></li>
-            <li class="nav-item"><%= link_to "会員ログイン", new_customer_session_path, class: 'btn btn-outline-secondary mx-3 my-1'  %></li>
-            <li class="nav-item"><%= link_to "管理者用", new_admin_session_path, class: 'btn btn-outline-secondary mx-3 my-1'  %></li>
-            </td>
+            <%= link_to "ホーム", root_path, class: 'btn btn-outline-secondary mx-3 my-1'%><br>
+            <%= link_to "概要", about_path,class: 'btn btn-outline-secondary mx-3 my-1' %><br>
+            <%= link_to "新規登録", new_customer_registration_path, class: 'btn btn-outline-secondary mx-3 my-1'  %><br>
+            <%= link_to "会員ログイン", new_customer_session_path, class: 'btn btn-outline-secondary mx-3 my-1'  %><br>
+            <%= link_to "管理者用", new_admin_session_path, class: 'btn btn-outline-secondary mx-3 my-1'  %>
+          </td>
         </tr>
     </table>

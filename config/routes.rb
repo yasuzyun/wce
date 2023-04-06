@@ -8,6 +8,7 @@ devise_for :customers,skip: [:passwords], controllers: {
 
 scope module: :public do
     root 'homes#top'
+    get '/about' => 'homes#about'
   end
 
 # 管理者用
