@@ -12,10 +12,10 @@ devise_for :customers,skip: [:passwords], controllers: {
   end
 
   resources :customers,     only: [:show,:create, :edit, :update, :destroy] do
-      collection do
-  	     get 'quit'
-  	     patch 'out'
-  	  end
+     # collection do
+  	  #   get 'quit'
+  	  #   patch 'out'
+  	 # end
   end  
 
 # 管理者用
